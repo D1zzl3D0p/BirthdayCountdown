@@ -8,13 +8,18 @@
 
     background-color: $color-blue-dark;
     border:none;
+    -webkit-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+    -moz-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+    -o-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     
 
     color: white;
     font-family: 'Montserrat';
     font-size: 18px;
     line-height: 20px;
+
+    // box-shadow: 0px 0px 30px 4px rgba(0,0,0,.6)
 
     &:hover{
         background-color: $color-blue-light;
