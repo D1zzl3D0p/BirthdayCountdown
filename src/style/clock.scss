@@ -1,12 +1,52 @@
 .clock{
-    display:none;
     grid-row: 3/4;
     grid-column: 2/11;
-    background-color: $color-gray-one;
-    height: 80%;
     align-self: end;
+
+    background-color: $color-gray-one;
+    text-align: center;
+    // margin: 20px;
+    height: 75%;
+    width:100%; 
+
     clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     -webkit-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     -moz-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     -o-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 275px));
+    grid-column-gap: 42px;
+    align-items: center;
+    // margin-top: 24px;
+    justify-content: center;
+   
+
+    &__box{
+        display:flex;
+        flex-direction: column;
+        align-self:center;
+        
+    }
+
+    &__title{
+        margin-top:30px;
+        margin-bottom: 20px;
+        margin-left:90px;
+        text-align: left;
+        font-size: 22px;
+        line-height: 25px;
+        color: $color-yellow-one;
+        font-family: "Roboto Condensed";
+    }
+
+    &__amount{
+        margin-top:-35px;
+
+        font-size:75px;
+        font-weight: bold;
+        // line-height: 115px;
+        color:white;
+        font-family: "Roboto Condensed";
+    }
 }

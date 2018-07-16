@@ -3,13 +3,13 @@
     grid-column: 6/10;
     height: 50px;
     width: 350px;
-    align-self: center;
+    align-self: flex-start;
     justify-self: center;
 
     background-color: $color-blue-dark;
     border:none;
-    -webkit-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
+    -webkit-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     -moz-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     -o-clip-path: polygon(7% 0, 100% 0, 93% 100%, 0% 100%);
     
