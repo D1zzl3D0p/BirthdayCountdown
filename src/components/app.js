@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
+import Picker from './picker';
+import Button from './button'
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Birthday Countdown</h1>
+      <div className="grid">
+        <h3 className="grid__title">Birthday Countdown</h3>
+
+        <div className="grid__skew-dark-one"></div>
+
+        <div className="grid__skew-light-one"></div>
+        <div className="grid__skew-light-two"></div>
+        <div className="grid__skew-light-three-box"></div>
+
+        <Picker />
+
+        { Button('Generate Countdown') }
       </div>
     );
   }
