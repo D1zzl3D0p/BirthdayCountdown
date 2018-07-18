@@ -12,7 +12,7 @@ $font-mont: "Monserrat";
     height: 100vh;
     display: grid;
     grid-template-rows: repeat(4, minmax(200px, 1fr));
-    grid-template-columns: repeat(111, minmax(150px, 1fr));
+    grid-template-columns: repeat(10, minmax(150px, 1fr));
     
 
         &__title{
@@ -31,14 +31,13 @@ $font-mont: "Monserrat";
         }
 
         &__remaining{
-            grid-row: 4/5;
-            grid-column: 1/10;
+            grid-row: 4/-1;
+            grid-column: 1/-1;
             text-align: center;
             margin-top: 33px;
             color: $color-gray-one;
-            font-family: $font-mont;
+            // font-family: $font-mont;
             font-size: 22px;
-            font-weight: 300px;
             
 
             

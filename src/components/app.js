@@ -4,6 +4,7 @@ import Button from './button'
 import Clock from './clock';
 import ChangeDate from './changeDate';
 import LargeText from './largeText';
+import moment from 'moment';
 
 export default class App extends Component {
 
@@ -11,9 +12,23 @@ export default class App extends Component {
     super(props)
 
     this.state={
-      active:false
+      active:false,
+      startDate: moment()
+      timeRemaining:{
+        days:0,
+        hours:0,
+        minutes:0,
+        seconds:0,
+      }
     }
   }
+
+  handleChange=function(date) {
+    console.log('App js Handle Change', date._d)
+    this.setState({
+        startDate: date
+    });
+  }.bind(this)
 
   renderItems= function(){
     if (this.state.active){
@@ -26,7 +41,9 @@ export default class App extends Component {
     }else{
       return[ 
         Button('Generate Countdown', ()=>this.setState({ active:true})),
-        <Picker /> 
+        <Picker 
+        callback={(date)=>this.handleChange(date)}
+        /> 
     ]
     }
   }.bind(this);
